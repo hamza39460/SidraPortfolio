@@ -13,6 +13,7 @@ type Industry = "On Demand Services" | "Healthcare" | "E-Commerce" | "Education"
 export function IndustriesSection() {
   const [selectedIndustry, setSelectedIndustry] = useState<Industry>("On Demand Services");
   const [isAutoSwitching, setIsAutoSwitching] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const manualSelectionTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -30,12 +31,18 @@ export function IndustriesSection() {
   useEffect(() => {
     if (isAutoSwitching) {
       intervalRef.current = setInterval(() => {
-        setSelectedIndustry((current) => {
-          const currentIndex = industries.indexOf(current);
-          const nextIndex = (currentIndex + 1) % industries.length;
-          return industries[nextIndex];
-        });
-      }, 5000); // 5 seconds
+        setIsTransitioning(true);
+        setTimeout(() => {
+          setSelectedIndustry((current) => {
+            const currentIndex = industries.indexOf(current);
+            const nextIndex = (currentIndex + 1) % industries.length;
+            return industries[nextIndex];
+          });
+          setTimeout(() => {
+            setIsTransitioning(false);
+          }, 50);
+        }, 300);
+      }, 2000); // 2 seconds
     } else {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
@@ -52,18 +59,25 @@ export function IndustriesSection() {
 
   // Handle manual selection
   const handleManualSelection = (industry: Industry) => {
-    setSelectedIndustry(industry);
-    setIsAutoSwitching(false);
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setSelectedIndustry(industry);
+      setIsAutoSwitching(false);
 
-    // Clear any existing timeout
-    if (manualSelectionTimeoutRef.current) {
-      clearTimeout(manualSelectionTimeoutRef.current);
-    }
+      // Clear any existing timeout
+      if (manualSelectionTimeoutRef.current) {
+        clearTimeout(manualSelectionTimeoutRef.current);
+      }
 
-    // Resume auto-switching after 60 seconds of manual selection
-    manualSelectionTimeoutRef.current = setTimeout(() => {
-      setIsAutoSwitching(true);
-    }, 60000);
+      // Resume auto-switching after 60 seconds of manual selection
+      manualSelectionTimeoutRef.current = setTimeout(() => {
+        setIsAutoSwitching(true);
+      }, 60000);
+
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 50);
+    }, 300);
   };
 
   // Cleanup on unmount
@@ -81,7 +95,7 @@ export function IndustriesSection() {
   const renderIndustryContent = () => {
     if (selectedIndustry === "Healthcare") {
       return (
-        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px]">
+        <div className={`grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px] transition-all duration-500 ease-in-out ${isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
           <Group1410091350 />
         </div>
       );
@@ -89,7 +103,7 @@ export function IndustriesSection() {
 
     if (selectedIndustry === "E-Commerce") {
       return (
-        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px]">
+        <div className={`grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px] transition-all duration-500 ease-in-out ${isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
           <Group1410091350ECommerce />
         </div>
       );
@@ -97,7 +111,7 @@ export function IndustriesSection() {
 
     if (selectedIndustry === "Education") {
       return (
-        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px]">
+        <div className={`grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px] transition-all duration-500 ease-in-out ${isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
           <Group1410091350Education />
         </div>
       );
@@ -105,7 +119,7 @@ export function IndustriesSection() {
 
     if (selectedIndustry === "Real Estate") {
       return (
-        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px]">
+        <div className={`grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px] transition-all duration-500 ease-in-out ${isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
           <Group1410091307RealEstate />
         </div>
       );
@@ -113,7 +127,7 @@ export function IndustriesSection() {
 
     if (selectedIndustry === "Lifestyle") {
       return (
-        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px]">
+        <div className={`grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px] transition-all duration-500 ease-in-out ${isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
           <Group1410091307Lifestyle />
         </div>
       );
@@ -121,7 +135,7 @@ export function IndustriesSection() {
 
     if (selectedIndustry === "Social Networking") {
       return (
-        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px]">
+        <div className={`grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 h-[663px] w-[1155px] transition-all duration-500 ease-in-out ${isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
           <Group1410091350SocialNetworking />
         </div>
       );
@@ -129,7 +143,7 @@ export function IndustriesSection() {
 
     // Default view for other industries
     return (
-      <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0">
+      <div className={`grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0 transition-all duration-500 ease-in-out ${isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
         <div className="col-1 h-[610px] ml-0 mt-0 relative rounded-[20px] row-1 w-[1100px] pointer-events-none" data-name="Creator's profile 1">
           <div className="absolute inset-0 overflow-hidden rounded-[20px]">
             <img alt="" className="absolute h-[132.76%] left-0 max-w-none top-0 w-full" src={imgCreatorsProfile1} />
