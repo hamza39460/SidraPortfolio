@@ -1,6 +1,6 @@
-import imgScreenshot20251210At92952Pm1 from "figma:asset/158e402ecad7981f2bea0040a64a17a3040e8d76.png";
-import imgScreenshot20251210At92913Pm1 from "figma:asset/754a4e9751fc29e4578e86821b9caa2b665bd78f.png";
-import imgIMockupIPhone14 from "figma:asset/a78bedf785b41081579b3f01658bba49280d3039.png";
+import imgScreenshot20251210At92952Pm1 from "../assets/158e402ecad7981f2bea0040a64a17a3040e8d76.png";
+import imgScreenshot20251210At92913Pm1 from "../assets/754a4e9751fc29e4578e86821b9caa2b665bd78f.png";
+import imgIMockupIPhone14 from "../assets/a78bedf785b41081579b3f01658bba49280d3039.png";
 
 function Group1() {
   return (

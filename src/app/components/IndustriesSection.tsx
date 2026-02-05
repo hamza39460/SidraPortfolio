@@ -5,8 +5,8 @@ import Group1410091350Education from "../../imports/Group1410091350-7-258";
 import Group1410091307RealEstate from "../../imports/Group1410091307";
 import Group1410091307Lifestyle from "../../imports/Group1410091307-7-292";
 import Group1410091350SocialNetworking from "../../imports/Group1410091350-7-303";
-import imgCreatorsProfile1 from "figma:asset/5313caed970c8e6d946419115e7c14be4bdcc41f.png";
-import imgGetStartedV21 from "figma:asset/aaca80a5291de843e00a27de1b3542bc0c56cf6b.png";
+import imgCreatorsProfile1 from "../../assets/5313caed970c8e6d946419115e7c14be4bdcc41f.png";
+import imgGetStartedV21 from "../../assets/aaca80a5291de843e00a27de1b3542bc0c56cf6b.png";
 
 type Industry = "On Demand Services" | "Healthcare" | "E-Commerce" | "Education" | "Real Estate" | "Lifestyle" | "Social Networking";
 

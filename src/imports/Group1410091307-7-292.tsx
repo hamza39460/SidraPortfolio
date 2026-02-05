@@ -1,7 +1,7 @@
-import imgIMockupIPhone14 from "figma:asset/5def56dabe1fb0abf0bc83b3bd4bf1567b869b1f.png";
-import imgIMockupIPhone15 from "figma:asset/26a93ed0951f2b5f8b432f3d4467189362037594.png";
-import imgIMockupIPhone16 from "figma:asset/db36ed54792298b3aea618583f0a6a67086e9b97.png";
-import imgIMockupIPhone17 from "figma:asset/9260e125c2d35e40ab531fe432158edd6d5112ad.png";
+import imgIMockupIPhone14 from "../assets/5def56dabe1fb0abf0bc83b3bd4bf1567b869b1f.png";
+import imgIMockupIPhone15 from "../assets/26a93ed0951f2b5f8b432f3d4467189362037594.png";
+import imgIMockupIPhone16 from "../assets/db36ed54792298b3aea618583f0a6a67086e9b97.png";
+import imgIMockupIPhone17 from "../assets/9260e125c2d35e40ab531fe432158edd6d5112ad.png";
 
 function Group1() {
   return (

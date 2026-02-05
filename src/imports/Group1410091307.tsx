@@ -1,6 +1,6 @@
-import imgIMockupIPhone15ProMax from "figma:asset/b5b67cd46c265bd21140e43ea75115bd3191f40b.png";
-import imgIMockupIPhone15ProMax1 from "figma:asset/790c6bb102646d99fa7a7972c5a2b3d7c3424bdd.png";
-import imgIMockupIPhone15ProMax2 from "figma:asset/1ee825b6f8643069e9b30556c061d5abff4a0441.png";
+import imgIMockupIPhone15ProMax from "../assets/b5b67cd46c265bd21140e43ea75115bd3191f40b.png";
+import imgIMockupIPhone15ProMax1 from "../assets/790c6bb102646d99fa7a7972c5a2b3d7c3424bdd.png";
+import imgIMockupIPhone15ProMax2 from "../assets/1ee825b6f8643069e9b30556c061d5abff4a0441.png";
 
 function Group1() {
   return (

@@ -1,5 +1,5 @@
-import imgManagePatients1 from "figma:asset/632c4e728a8339430329e994e5f1765af82b45e0.png";
-import imgImage4 from "figma:asset/0d087b5327d0eef825da7818455378ebf492e02c.png";
+import imgManagePatients1 from "../assets/632c4e728a8339430329e994e5f1765af82b45e0.png";
+import imgImage4 from "../assets//0d087b5327d0eef825da7818455378ebf492e02c.png";
 
 export default function Group() {
   return (

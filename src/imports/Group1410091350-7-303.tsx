@@ -1,5 +1,5 @@
-import imgDesktop1 from "figma:asset/36db5e065224112d2a65ab31c8f8f6ca01875608.png";
-import imgMobile1 from "figma:asset/91c1310e80c9acf6205cf551c389f49d66d58044.png";
+import imgDesktop1 from "../assets/36db5e065224112d2a65ab31c8f8f6ca01875608.png";
+import imgMobile1 from "../assets/91c1310e80c9acf6205cf551c389f49d66d58044.png";
 
 export default function Group() {
   return (

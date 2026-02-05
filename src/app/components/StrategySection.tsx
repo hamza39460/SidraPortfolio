@@ -1,4 +1,4 @@
-import strategyImage from "figma:asset/ca1e21dda78033f7039c4fcbc76adff263f4c861.png";
+import strategyImage from "../../assets/ca1e21dda78033f7039c4fcbc76adff263f4c861.png";
 
 export function StrategySection() {
   return (

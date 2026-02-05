@@ -1,5 +1,5 @@
-import imgImage29 from "figma:asset/8c8470f31332aa27a94c783bc29686bf3e5e3e9a.png";
-import imgImage28 from "figma:asset/a65219cd29c168cc80688b69c61483a181ac8a03.png";
+import imgImage29 from "../assets/8c8470f31332aa27a94c783bc29686bf3e5e3e9a.png";
+import imgImage28 from "../assets/a65219cd29c168cc80688b69c61483a181ac8a03.png";
 
 export default function Group() {
   return (
