@@ -306,7 +306,7 @@ function Group14() {
 
 function Container() {
   return (
-    <a className="bg-[rgba(255,255,255,0.11)] block cursor-pointer h-[62px] relative rounded-[60px] shrink-0 w-[149px]" data-name="Container" href="https://drive.google.com/file/d/1DNr_QcUbUXw1no-wMLf7XqmGeJ0JyTLh/view?usp=sharing">
+    <a className="bg-[rgba(255,255,255,0.11)] block cursor-pointer h-[62px] relative rounded-[60px] shrink-0 w-[149px]" data-name="Container" href="https://www.upwork.com/freelancers/~01a7b8f5582b50fefd" target="_blank" rel="noopener noreferrer">
       <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.22)] border-solid inset-0 pointer-events-none rounded-[60px]" />
       <Group14 />
     </a>
@@ -1104,7 +1104,7 @@ function Frame46() {
 
 function Container1() {
   return (
-    <a className="bg-gradient-to-r block cursor-pointer from-[#0291f4] h-[62px] relative rounded-[60px] shrink-0 to-[#4418d1] w-[245px]" data-name="Container" href="https://drive.google.com/file/d/1DNr_QcUbUXw1no-wMLf7XqmGeJ0JyTLh/view?usp=sharing">
+    <a className="bg-gradient-to-r block cursor-pointer from-[#0291f4] h-[62px] relative rounded-[60px] shrink-0 to-[#4418d1] w-[245px]" data-name="Container" href="https://www.upwork.com/freelancers/~01a7b8f5582b50fefd" target="_blank" rel="noopener noreferrer">
       <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.22)] border-solid inset-0 pointer-events-none rounded-[60px]" />
       <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[37px] not-italic text-[21px] text-left text-white top-[30.5px] tracking-[0.124px] whitespace-nowrap" role="link" tabIndex="0">
         <p className="leading-[18.6px]">Let’s Get Startred</p>
@@ -1739,7 +1739,7 @@ function Group72() {
 
 function Container2() {
   return (
-    <a className="bg-gradient-to-r block cursor-pointer from-[#0291f4] h-[62px] relative rounded-[60px] shrink-0 to-[#4418d1] w-[245px]" data-name="Container" href="https://drive.google.com/file/d/1DNr_QcUbUXw1no-wMLf7XqmGeJ0JyTLh/view?usp=sharing">
+    <a className="bg-gradient-to-r block cursor-pointer from-[#0291f4] h-[62px] relative rounded-[60px] shrink-0 to-[#4418d1] w-[245px]" data-name="Container" href="https://www.upwork.com/freelancers/~01a7b8f5582b50fefd" target="_blank" rel="noopener noreferrer">
       <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.22)] border-solid inset-0 pointer-events-none rounded-[60px]" />
       <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[37px] not-italic text-[21px] text-left text-white top-[30.5px] tracking-[0.124px] whitespace-nowrap" role="link" tabIndex="0">
         <p className="leading-[18.6px]">Let’s Get Startred</p>
@@ -2533,7 +2533,7 @@ function Container14() {
 
 function Container13() {
   return (
-    <a className="backdrop-blur-[10px] bg-[rgba(98,98,98,0.42)] block cursor-pointer h-[155px] relative rounded-[300px] shrink-0 w-full" data-name="Container" href="https://drive.google.com/file/d/1DNr_QcUbUXw1no-wMLf7XqmGeJ0JyTLh/view?usp=sharing">
+    <a className="backdrop-blur-[10px] bg-[rgba(98,98,98,0.42)] block cursor-pointer h-[155px] relative rounded-[300px] shrink-0 w-full" data-name="Container" href="https://www.upwork.com/freelancers/~01a7b8f5582b50fefd" target="_blank" rel="noopener noreferrer">
       <div aria-hidden="true" className="absolute border border-[#c18bff] border-solid inset-0 pointer-events-none rounded-[300px]" />
       <div className="-translate-y-1/2 absolute flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] left-[184px] not-italic text-[21px] text-left text-white top-[37.5px] tracking-[0.124px] whitespace-nowrap">
         <p className="leading-[18.6px]">Explore all about my experience</p>

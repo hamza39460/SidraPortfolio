@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Group1410091350 from "../../imports/Group1410091350";
 import Group1410091350ECommerce from "../../imports/Group1410091350-7-245";
 import Group1410091350Education from "../../imports/Group1410091350-7-258";
@@ -12,6 +12,9 @@ type Industry = "On Demand Services" | "Healthcare" | "E-Commerce" | "Education"
 
 export function IndustriesSection() {
   const [selectedIndustry, setSelectedIndustry] = useState<Industry>("On Demand Services");
+  const [isAutoSwitching, setIsAutoSwitching] = useState(true);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const manualSelectionTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const industries: Industry[] = [
     "On Demand Services",
@@ -22,6 +25,58 @@ export function IndustriesSection() {
     "Lifestyle",
     "Social Networking"
   ];
+
+  // Auto-switching logic
+  useEffect(() => {
+    if (isAutoSwitching) {
+      intervalRef.current = setInterval(() => {
+        setSelectedIndustry((current) => {
+          const currentIndex = industries.indexOf(current);
+          const nextIndex = (currentIndex + 1) % industries.length;
+          return industries[nextIndex];
+        });
+      }, 5000); // 5 seconds
+    } else {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    }
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [isAutoSwitching, industries]);
+
+  // Handle manual selection
+  const handleManualSelection = (industry: Industry) => {
+    setSelectedIndustry(industry);
+    setIsAutoSwitching(false);
+
+    // Clear any existing timeout
+    if (manualSelectionTimeoutRef.current) {
+      clearTimeout(manualSelectionTimeoutRef.current);
+    }
+
+    // Resume auto-switching after 60 seconds of manual selection
+    manualSelectionTimeoutRef.current = setTimeout(() => {
+      setIsAutoSwitching(true);
+    }, 60000);
+  };
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+      if (manualSelectionTimeoutRef.current) {
+        clearTimeout(manualSelectionTimeoutRef.current);
+      }
+    };
+  }, []);
 
   const renderIndustryContent = () => {
     if (selectedIndustry === "Healthcare") {
@@ -95,7 +150,7 @@ export function IndustriesSection() {
         {industries.map((industry) => (
           <button
             key={industry}
-            onClick={() => setSelectedIndustry(industry)}
+            onClick={() => handleManualSelection(industry)}
             className={`${
               selectedIndustry === industry
                 ? "bg-[#2d366a]"
