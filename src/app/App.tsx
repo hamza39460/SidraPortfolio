@@ -1,8 +1,14 @@
 import WhoIAm from "../imports/WhoIAm";
+import CustomCursor from "./components/CustomCursor";
+import MouseTrail from "./components/MouseTrail";
 
 export default function App() {
   return (
     <div className="w-full min-h-screen overflow-x-hidden">
+      {/* Custom Cursor and Mouse Trail */}
+      <CustomCursor />
+      <MouseTrail />
+
       {/* Full-width background layers - absolutely positioned to cover entire viewport */}
       <div className="fixed inset-0 left-0 right-0 pointer-events-none">
         {/* Dark navy background - Hero section */}
