@@ -460,7 +460,7 @@ function Frame4() {
 function Frame5() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-center not-italic relative shrink-0 text-center w-full">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[60px] text-white w-full whitespace-pre-wrap">UX /UI Designer</p>
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[60px] text-white w-full whitespace-pre-wrap">UX/UI Designer</p>
       <div className="flex flex-col font-['Open_Sans:Medium',sans-serif] justify-center leading-[0] relative shrink-0 text-[#fafafa] text-[18px] tracking-[0.201px] w-full">
         <p className="leading-[30.09px] whitespace-pre-wrap">Design high-converting digital platforms that seamlessly combine products, people, and purpose under one consistent brand experience</p>
       </div>
