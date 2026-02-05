@@ -918,9 +918,9 @@ function Group31() {
           <div className="absolute bg-gradient-to-b from-[25.573%] from-[rgba(0,0,0,0)] inset-0 rounded-[20px] to-[rgba(0,0,0,0.94)]" />
         </div>
       </div>
-      <p className="-translate-x-1/2 col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] ml-[131px] mt-[199px] not-italic relative row-1 text-[20px] text-center text-white">Matthew Molter</p>
+      <p className="-translate-x-1/2 col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] ml-[131px] mt-[199px] not-italic relative row-1 text-[20px] text-center text-white">Dmitriy Ginzburg</p>
       <div className="-translate-x-1/2 col-1 font-['Inter:Regular',sans-serif] font-normal h-[16px] leading-[16px] ml-[131px] mt-[231px] not-italic relative row-1 text-[11px] text-center text-white w-[204px] whitespace-pre-wrap">
-        <p className="mb-0">Helping government to solve problems.</p>
+        <p className="mb-0">CEO, Mifcom</p>
         <p>&nbsp;</p>
       </div>
     </div>
