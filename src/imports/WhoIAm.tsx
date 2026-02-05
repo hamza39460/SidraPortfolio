@@ -438,8 +438,8 @@ function Group28() {
 
 function Group15() {
   return (
-    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0">
-      <div className="-translate-y-1/2 col-1 flex flex-col font-['Open_Sans:Regular',sans-serif] justify-center ml-0 mt-[9.5px] not-italic relative row-1 text-[12.206px] text-white tracking-[0.124px] whitespace-nowrap">
+    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-center justify-items-[start] leading-[0] relative shrink-0">
+      <div className="col-1 flex flex-col font-['Open_Sans:Regular',sans-serif] justify-center ml-0 not-italic relative row-1 text-[12.206px] text-white tracking-[0.124px] whitespace-nowrap">
         <p className="leading-[18.6px]">50+ Reviews</p>
       </div>
     </div>
@@ -866,17 +866,17 @@ function Frame13() {
 
 function Group30() {
   return (
-    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] pointer-events-none relative shrink-0">
-      <div className="col-1 h-[610px] ml-0 mt-0 relative rounded-[20px] row-1 w-[1100px]" data-name="Creator\'s profile 1">
+    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0">
+      <div className="col-1 h-[610px] ml-0 mt-0 relative rounded-[20px] row-1 w-[1100px] pointer-events-none" data-name="Creator\'s profile 1">
         <div className="absolute inset-0 overflow-hidden rounded-[20px]">
           <img alt="" className="absolute h-[132.76%] left-0 max-w-none top-0 w-full" src={imgCreatorsProfile1} />
         </div>
         <div aria-hidden="true" className="absolute border-9 border-[#2d366a] border-solid inset-[-9px] rounded-[29px]" />
       </div>
-      <div className="col-1 h-[528px] ml-[911px] mt-[135px] relative rounded-[20px] row-1 w-[244px]" data-name="Get Started v2 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-[20px] size-full" src={imgGetStartedV21} />
+      <a href="https://www.upwork.com/freelancers/~01a7b8f5582b50fefd" target="_blank" rel="noopener noreferrer" className="col-1 h-[528px] ml-[911px] mt-[135px] relative rounded-[20px] row-1 w-[244px] cursor-pointer hover:opacity-90 transition-opacity block" data-name="Get Started v2 1">
+        <img alt="Get Started" className="absolute inset-0 max-w-none object-cover rounded-[20px] size-full" src={imgGetStartedV21} />
         <div aria-hidden="true" className="absolute border-8 border-[rgba(255,255,255,0.1)] border-solid inset-[-8px] rounded-[28px]" />
-      </div>
+      </a>
     </div>
   );
 }
@@ -2553,15 +2553,9 @@ function Frame34() {
 
 export default function WhoIAm() {
   return (
-    <div className="bg-white relative size-full" data-name="who i am">
+    <div className="relative w-[1440px] h-auto" data-name="who i am">
       <Group86 />
-      <div className="absolute flex h-[1046px] items-center justify-center left-0 top-[6428px] w-[1440px]">
-        <div className="-scale-y-100 flex-none">
-          <div className="bg-[#111343] h-[1046px] w-[1440px]" />
-        </div>
-      </div>
       <Group89 />
-      <div className="absolute bg-[#111343] h-[2457px] left-0 top-0 w-[1440px]" />
       <Group26 />
       <Group27 />
       <div className="absolute left-[-102px] size-[257px] top-[-128px]">
@@ -2598,11 +2592,6 @@ export default function WhoIAm() {
         </div>
       </div>
       <p className="absolute font-['Open_Sans:Medium',sans-serif] h-[17px] leading-[normal] left-[600px] not-italic text-[12px] text-white top-[7441px] w-[239px] whitespace-pre-wrap">@ 2026 Sidra Batool All Rights Reserved</p>
-      <div className="absolute flex h-[1001px] items-center justify-center left-0 top-[6428px] w-[1440px]">
-        <div className="-scale-y-100 flex-none">
-          <div className="bg-[rgba(17,19,67,0.5)] h-[1001px] w-[1440px]" />
-        </div>
-      </div>
       <Frame34 />
     </div>
   );

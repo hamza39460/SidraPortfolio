@@ -74,24 +74,24 @@ export function IndustriesSection() {
 
     // Default view for other industries
     return (
-      <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] pointer-events-none relative shrink-0">
-        <div className="col-1 h-[610px] ml-0 mt-0 relative rounded-[20px] row-1 w-[1100px]" data-name="Creator's profile 1">
+      <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0">
+        <div className="col-1 h-[610px] ml-0 mt-0 relative rounded-[20px] row-1 w-[1100px] pointer-events-none" data-name="Creator's profile 1">
           <div className="absolute inset-0 overflow-hidden rounded-[20px]">
             <img alt="" className="absolute h-[132.76%] left-0 max-w-none top-0 w-full" src={imgCreatorsProfile1} />
           </div>
           <div aria-hidden="true" className="absolute border-9 border-[#2d366a] border-solid inset-[-9px] rounded-[29px]" />
         </div>
-        <div className="col-1 h-[528px] ml-[911px] mt-[135px] relative rounded-[20px] row-1 w-[244px]" data-name="Get Started v2 1">
-          <img alt="" className="absolute inset-0 max-w-none object-cover rounded-[20px] size-full" src={imgGetStartedV21} />
+        <a href="https://www.upwork.com/freelancers/~01a7b8f5582b50fefd" target="_blank" rel="noopener noreferrer" className="col-1 h-[528px] ml-[911px] mt-[135px] relative rounded-[20px] row-1 w-[244px] cursor-pointer hover:opacity-90 transition-opacity block" data-name="Get Started v2 1">
+          <img alt="Get Started" className="absolute inset-0 max-w-none object-cover rounded-[20px] size-full" src={imgGetStartedV21} />
           <div aria-hidden="true" className="absolute border-8 border-[rgba(255,255,255,0.1)] border-solid inset-[-8px] rounded-[28px]" />
-        </div>
+        </a>
       </div>
     );
   };
 
   return (
-    <div className="col-1 content-stretch flex flex-col gap-[40px] items-end ml-0 mt-[174px] relative row-1 w-[1156px]" data-name="Industries">
-      <div className="content-stretch flex gap-[67px] items-center relative shrink-0 w-full">
+    <div className="col-1 content-stretch flex flex-col gap-[40px] items-center ml-0 mt-[174px] relative row-1 w-[1156px]" data-name="Industries">
+      <div className="content-stretch flex gap-[67px] items-center justify-center relative shrink-0 w-full">
         {industries.map((industry) => (
           <button
             key={industry}
